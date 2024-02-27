@@ -1,0 +1,8 @@
+/* Leave these body styles here. They set the font to Montserrat and removes a margin from the body. */
+body {
+    font-family: "Montserrat";
+    margin: 0px;
+}
+/* Leave these img styles here. Images never should exceed the browser width. */
+img { max-width: 100%; }
+

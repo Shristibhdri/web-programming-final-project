@@ -1,204 +1,215 @@
-
-body {
+@media (max-width: 830px) {
+  body {
     font-family: "Montserrat";
     margin: 0;
-    padding: 0;  
-}
+    padding: 0;
+  }
+  .max-width-wrapper {
+    width: auto;
+  }
 
-@media screen and (max-width: 400px){
+  header {
+    display: grid;
+    justify-content: center;
+  }
 
-    .main_nav ul li a{
-        color: rgb(249, 103, 31);
-        text-decoration: none;
-        transition: 0.4 all ease;
-        font-size: 10px;
-        padding: 1px 15px;
-        margin: center;
-        padding-left: 40px;
+  /* Navigation begins  */
+  .main_nav ul li a {
+    color: rgb(249, 103, 31);
+    text-decoration: none;
+    font-size: 10px;
+    margin: 25px;
+  }
 
-    }
+  .main_nav ul {
+    list-style-type: none;
+    display: flex;
+    padding-bottom: 15px;
+    padding-top: 5px;
+  }
 
-    .main_nav ul{
-        list-style-type: none;
-        display: flex;
-        margin: 0;
-        padding: 10px 35px;
-        padding-bottom: 20px;
-        border-bottom: 2px solid var(--separator-line-color);
-    } 
+  .main_nav {
+    display: flex;
+    justify-content: center;
+  }
+  /* Navigation ends  */
 
-    .header1{
-        max-width: 50%; 
-        margin: 0 auto;
-        padding-left: 100px;
+  /* Introduction Section begins  */
+  .intro_section {
+    text-align: center;
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .intro_section_content {
+    display: flex;
+    gap: 0px;
+    flex-direction: column-reverse;
+  }
+  .top_heading {
+    font-size: 30px;
+  }
+  .bottom_heading {
+    font-size: 20px;
+    position: relative;
+  }
+  .bottom_heading::before {
+    content: "";
+    position: absolute;
+    bottom: 120%;
+    left: 27%;
+    width: 45%;
+    height: 2px;
+    background-color: rgba(254, 102, 3, 255);
+  }
+  .paragraph_1 {
+    font-size: 15px;
+    color: rgb(101, 88, 88);
+  }
+  .first_button {
+    background-color: rgba(254, 102, 3, 255);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  .intro_section img {
+    height: 200px;
+    width: 200px;
+  }
 
-    }
+  /* Introductio Section ends  */
 
-    .top_heading {
-        color:rgb(249, 103, 31);
-        text-align: center;
-        font-size: 22px;
-    }
+  /* Second part begins */
+  .second_part {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(254, 245, 238, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .second_1 {
+    text-align: center;
+    color: rgba(254, 102, 3, 255);
+    font-size: 22px;
+    width: 70%;
+    padding-left: 55px;
+  }
+  .second_2 {
+    text-align: center;
+    color: rgba(254, 102, 3, 255);
+    font-size: 13px;
+  }
+  .second_2 a {
+    color: #366dcc;
+  }
+  .second_part_box_container {
+    display: flex;
+    gap: 0px;
+  }
+  .box {
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+    color: rgba(254, 102, 3, 255);
+    background-color: white;
+    width: 60px;
+    padding: 5px;
+    border-radius: 3px;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+  .box-label {
+    font-size: 8px;
+  }
+  .header3 {
+    width: 22px;
+  }
 
-    .bottom_heading{
-        color: rgb(249, 103, 31);
-        text-align: center;
-        font-size: 15px;
-    }
+  .header2 {
+    width: 30px;
+  }
 
-    .your_site::after {
-        content: '';
-        display: block;
-        margin: 0 auto;
-        position: absolute;
-        bottom: 74%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-top: 2px solid rgb(249, 103, 31);
-        width: 25%; 
-    }
+  .header4 {
+    width: 25px;
+  }
+  /* Second part ends */
 
-    .paragraph_1{
-        text-align: center;
-        color: rgb(131, 95, 75);
-        font-size: 13px;  
-        padding: 10px;
-    }
+  /* Third part begins */
+  .third_part_image {
+    height: 300px;
+    width: 250px;
+  }
+  .third_part {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    height: auto;
+  }
+  .text p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .heading_sec {
+    color: rgba(254, 102, 3, 255);
+    font-size: 28px;
+  }
+  .pgh_1 {
+    font-size: 16px;
+    color: rgba(254, 102, 3, 255);
+  }
 
-    .first_button{
-        background-color:rgb(249, 103, 31);
-        color:white;
-        text-align: center;
-        padding:7px;
-        border-radius: 5px;
-        margin-left: 150px;
-        border: none;
-        font-size: 12px;
-    }
+  .pgh_2 {
+    font-size: 14px;
+    color: rgb(160, 154, 154);
+  }
 
-    .second_part{
-        background-color:  rgba(250, 232, 210, 0.996);
-        width:105%;
-    
-    }
-    .second_1{
-        text-align: center;
-        color:rgb(249, 103, 31);
-        font-size: 18px;
-        padding: 10px 0px;
-        margin-top: 20px;
-    }
+  .pgh_3 {
+    font-size: 14px;
+    color: rgb(160, 154, 154);
+  }
+  /* Third part ends */
 
-    .second_2{
-        text-align: center;
-        color:rgb(249, 103, 31);
-        font-size: 10px;
-        margin-bottom: 20px;
-    }
+  /*fourth part begins*/
+  .forth_part_content {
+    width: 80%;
+  }
+  .forth_part_content h3 {
+    color: rgb(101, 88, 88);
+    width: 50%;
+    padding-left: 80px;
+  }
+  .forth_part input {
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+  .forth_button {
+    background-color: rgba(254, 102, 3, 255);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    color: white;
+    width: 93%;
+  }
+  /*fourth part ends*/
 
-    .box {
-        display: inline-block;
-        text-align: center;
-        margin: 3px; 
-        transform: translateX(50px);
-        color:rgb(249, 103, 31);
-        background-color: white;
-        width: 70px;
-        padding: 10px;
-        border-radius: 3px;
-        height: 50px;
-        vertical-align: top;
-        margin-bottom: 50px;
-    }
-
-    .header3 {
-        width: 25px; 
-    }
-
-    .header2{
-        width: 40px;
-    }
-
-    .header4{
-        width: 30px;
-    }
-
-    .box-label {
-        font-size: 10px; 
-        margin-top: 5px;
-        text-align: center;
-    }
-
-    .header5{
-        max-width: 55%; 
-        margin-left: 70px; 
-        padding: 30px;
-    }
-
-    .heading_sec{
-        color: rgb(249, 103, 31);
-        font-size: 25px;
-        text-align: center;
-        transform: translateY(-10px); 
-        
-    }
-    .pgh_1{
-        text-align: center;
-        font-size: 13px;
-        color:rgb(249, 103, 31);
-    }
-
-    .pgh_2{
-        text-align: center;
-        font-size: 12px;
-        color: rgb(160, 154, 154);
-    }
-
-    .pgh_3{
-        text-align: center;
-        font-size: 12px;
-        color: rgb(160, 154, 154);
-        padding: 15px;
-
-    }
-
-    .third_part{
-        background-color: rgba(250, 232, 210, 0.996);
-        margin: 5px;
-        margin-bottom: 25px;
-        padding: 15px;
-        text-align: center;
-        border-radius: 17px;
-        color:rgb(81, 61, 50);
-    }
-
-    .third_part input {
-        border: none;
-        padding: 10px;
-        width: 90%;
-        border-radius: 10px;
-        text-align: center;
-        margin-bottom: 13px;
-    }
-
-    .forth_button{
-        background-color:rgb(249, 103, 31);
-        border: none;
-        padding: 10px;
-        width: 97%;
-        border-radius: 5px;
-        text-align: center;
-        margin-bottom: 13px;
-        color: white;
-    }
-
-    footer{
-        background-color:rgb(249, 103, 31);
-        width: 100%;
-        color: white;
-        text-align: center;
-        font-size: 10px;
-        padding: 10px;
-
-    }
+  /*footer*/
+  footer {
+    background-color: rgba(254, 102, 3, 255);
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+  }
+  footer p {
+    font-size: 8px;
+  }
 }
